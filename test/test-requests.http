@@ -1,0 +1,38 @@
+#Test http requests
+
+### Get all items
+GET http://127.0.0.1:3000/items
+
+### Get item by id
+GET http://127.0.0.1:3000/items/1
+
+### Post new item
+POST http://127.0.0.1:3000/items/
+Content-Type: application/json
+
+{
+    "name":"posted item"
+}
+
+### Delete item by id
+DELETE http://127.0.0.1:3000/items/1
+
+### Modify existing item by id
+PUT http://127.0.0.1:3000/items/1
+Content-Type: application/json
+
+{
+    "name":"modified item"
+}
+
+### Test addition
+GET http://127.0.0.1:3000/calculate/add/5/5
+
+### Test subtraction
+GET http://127.0.0.1:3000/calculate/subtract/5/5
+
+### Test multiplication
+GET http://127.0.0.1:3000/calculate/multiply/5/5
+
+### Test division
+GET http://127.0.0.1:3000/calculate/divide/5/5
